@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+// 	// dd("Wleome");
+//     return view('welcome');
+// });
 Route::get("/articles", 'UserController@articles');
-Route::get("/read_articles", 'UserController@readArticles');
+Route::get("/", 'UserController@readArticles');
+Route::get("/getData", 'UserController@getData');
